@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ActivityB">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="automatically bind activity at OnCreate()\nautomatically un-bind activity at OnDestroy()"
+        android:textColor="@android:color/white"
+        android:gravity="left"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMethod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="0.5"
+            android:onClick="onClickBtnMethod"
+            android:textSize="14sp"
+            android:text="Service method status: " />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:hint="not...."
+            />
+    </LinearLayout>
+</LinearLayout>

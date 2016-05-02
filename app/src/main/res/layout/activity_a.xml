@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".ActivityA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="NOTE: This is not a foreground service but a Started service that will Bound with multiple activities.\nTherefore, I named it BothService (i.e started and bound)"
+        android:textColor="@android:color/white"
+        android:gravity="left"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center"
+        android:onClick="onClickBtnStartService"
+        android:textSize="18sp"
+        android:layout_margin="4dp"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/btnBindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center"
+        android:onClick="onClickBtnBindService"
+        android:textSize="18sp"
+        android:layout_margin="4dp"
+        android:text="Bind Service" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMethod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="0.5"
+            android:onClick="onClickBtnMethod"
+            android:textSize="14sp"
+            android:text="Service method status: " />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:hint="not...."
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnUnBind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center"
+        android:onClick="onClickBtnUnBindService"
+        android:textSize="18sp"
+        android:layout_margin="4dp"
+        android:text="Un-Bind Service" />
+
+    <Button
+        android:id="@+id/btnChangeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center"
+        android:onClick="onClickBtnChangeActivity"
+        android:textSize="18sp"
+        android:layout_margin="4dp"
+        android:text="Change Activity-B" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Force close the application from settings to stop the service."
+        android:textColor="@android:color/white"
+        android:gravity="left"
+        android:padding="8dp"
+        android:background="@android:color/black"/>
+
+</LinearLayout>
