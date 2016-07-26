@@ -14,6 +14,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Shayan Rais (http://shanraisshan.com)
+ * created on 5/2/2016
+ */
 public class ActivityB extends AppCompatActivity {
 
     @Override

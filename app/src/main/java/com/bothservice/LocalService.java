@@ -10,6 +10,10 @@ import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+/**
+ * Shayan Rais (http://shanraisshan.com)
+ * created on 5/2/2016
+ */
 public class LocalService extends Service {
 
     public LocalService() {

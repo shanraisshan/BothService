@@ -4,7 +4,8 @@ import android.app.ActivityManager;
 import android.content.Context;
 
 /**
- * Created by Shayan.Rais on 5/2/2016.
+ * Shayan Rais (http://shanraisshan.com)
+ * created on 5/2/2016
  */
 public class Utility {
 
